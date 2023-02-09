@@ -1,0 +1,16 @@
+
+function About() {
+
+  return (
+    <>
+    <main className='h-screen w-full bg-gray-600 dark:bg-gray-900 '>
+      <div className='relative flex items-center justify-center h-screen text-8xl text-white'>
+        <h6>About page</h6>
+
+      </div>
+    </main>
+  </>
+  )
+}
+
+export default About
