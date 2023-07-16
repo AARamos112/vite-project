@@ -1,7 +1,9 @@
 {
   "name": "vite-project",
+  "homepage": "http://leadwithjesus.com",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "my react application",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -17,7 +19,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.0",
-    "reactstrap": "^9.1.5"
+    "reactstrap": "^9.1.5",
+    "tw-elements": "^1.0.0-beta1"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^6.2.1",

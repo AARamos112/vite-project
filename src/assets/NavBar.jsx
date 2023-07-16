@@ -51,7 +51,7 @@ const NavBar = () => {
 
   return (
       
-<header className="header sticky top-0 min-w-full bg-gray-100 shadow-md flex items-center justify-between px-8 py-4">
+<header className="header relative top-0 min-w-full bg-gray-100 shadow-md flex items-center justify-between px-8 py-4">
   
   <h1 className="w-3/12">
     <RouterNavLink

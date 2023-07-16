@@ -4,9 +4,24 @@ import Home from './pages/Home';
 import Resources from './pages/Resources';
 import About from './pages/About';
 import DataPage from './pages/DataPage';
+import { useAuth0 } from "@auth0/auth0-react";
 
 
 function App() {
+
+  const {
+    user,
+    isAuthenticated,
+    loginWithRedirect,
+    logout,
+  } = useAuth0();
+
+const logoutWithRedirect = () =>
+  logout({
+      logoutParams: {
+        returnTo: window.location.origin,
+      }
+  });
 
   return (
     <div >
@@ -16,7 +31,11 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/resources" element={<Resources />} />
+          {isAuthenticated && (
           <Route path="/datapage" element={<DataPage />} />
+          )}
+
+
         </Routes>
     </BrowserRouter>
   </div>

@@ -1,5 +1,6 @@
 
 import childrenVideo from '../assets/childrenVideo.mp4'
+import Footer from '../assets/Footer'
 
 
 function Home() {
@@ -20,10 +21,9 @@ function Home() {
           Your browser does not support the video tag.
         </video>
       </div>
-        
-  
-     
-
+      </div>
+      <div className='bg-secondary-100 text-center dark:bg-secondary-600'>
+        <Footer />
       </div>
     </main>
   </>
